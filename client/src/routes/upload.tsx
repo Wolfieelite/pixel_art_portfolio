@@ -5,5 +5,10 @@ export const Route = createFileRoute('/upload')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/upload"!</div>
+  return (
+    <form>
+      <input type="file" name="file" />
+      <button type="submit">Upload</button>
+    </form>
+  )
 }
